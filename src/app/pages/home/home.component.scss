@@ -18,7 +18,7 @@
 }
 
 #anime-text {
-    
+
     animation: movement-text;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -29,10 +29,9 @@
     position: fixed;
     bottom: 50px;
     left: 50px;
-    animation: space;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
 #astronauta {
@@ -182,5 +181,25 @@
 @keyframes movement-text {
     0% {
         transform: translatey(500px);
-    }    
+    }
+}
+
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
