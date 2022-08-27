@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     height: 100%;
     width: 100%;
     position: relative;
@@ -15,6 +15,13 @@
         text-align: center;
         z-index: 1;
     }
+}
+
+#anime-text {
+    
+    animation: movement-text;
+    animation-duration: 10s;
+    animation-timing-function: linear;
 }
 
 #planet {
@@ -87,72 +94,93 @@
     0% {
         transform: scale(1);
     }
+
     10% {
         transform: scale(1.05);
     }
+
     20% {
         transform: scale(1.07);
     }
+
     30% {
         transform: scale(1.10);
     }
+
     40% {
         transform: scale(1.13);
     }
+
     50% {
         transform: scale(1.15);
     }
+
     60% {
         transform: scale(1.13);
     }
+
     70% {
         transform: scale(1.10);
     }
+
     80% {
         transform: scale(1.07);
     }
+
     90% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
-    
-    
+
+
 }
 
 @keyframes move {
     0% {
         top: -200px;
         right: -200px;
-        
+
     }
+
     100% {
         top: 100vh;
-        right: 100vw;        
+        right: 100vw;
     }
-    
+
 }
 
 @keyframes highlight {
     0% {
         filter: brightness(1);
         transform: scale(1);
-    }    
+    }
+
     25% {
         filter: brightness(1.25);
         transform: scale(1.1);
-    }    
+    }
+
     50% {
         filter: brightness(5);
         transform: scale(1.2);
-    }    
+    }
+
     75% {
         filter: brightness(1.25);
         transform: scale(1.1);
-    }    
+    }
+
     100% {
         filter: brightness(1);
         transform: scale(1);
+    }
+}
+
+@keyframes movement-text {
+    0% {
+        transform: translatey(500px);
     }    
 }
