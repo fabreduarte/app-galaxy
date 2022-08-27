@@ -1,0 +1,158 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    h1 {
+        color: #E1EEEB;
+        font-size: 50px;
+        width: 500px;
+        line-height: 60px;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+#planet {
+    width: 200px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    animation: space;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#astronauta {
+    width: 200px;
+    position: fixed;
+    bottom: 100px;
+    right: 80px;
+    animation: gravidade;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#cometa {
+    width: 200px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    animation: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#estrelas {
+    width: 200px;
+    position: fixed;
+    top: 150px;
+    left: 300px;
+    animation: highlight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gravidade {
+    0% {
+        transform: translatey(0);
+    }
+
+    25% {
+        transform: translatey(-35px);
+    }
+
+    50% {
+        transform: translatey(-70px);
+    }
+
+    75% {
+        transform: translatey(-35px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes space {
+
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1.07);
+    }
+    30% {
+        transform: scale(1.10);
+    }
+    40% {
+        transform: scale(1.13);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    60% {
+        transform: scale(1.13);
+    }
+    70% {
+        transform: scale(1.10);
+    }
+    80% {
+        transform: scale(1.07);
+    }
+    90% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+    
+}
+
+@keyframes move {
+    0% {
+        top: -200px;
+        right: -200px;
+        
+    }
+    100% {
+        top: 100vh;
+        right: 100vw;        
+    }
+    
+}
+
+@keyframes highlight {
+    0% {
+        filter: brightness(1);
+        transform: scale(1);
+    }    
+    25% {
+        filter: brightness(1.25);
+        transform: scale(1.1);
+    }    
+    50% {
+        filter: brightness(5);
+        transform: scale(1.2);
+    }    
+    75% {
+        filter: brightness(1.25);
+        transform: scale(1.1);
+    }    
+    100% {
+        filter: brightness(1);
+        transform: scale(1);
+    }    
+}

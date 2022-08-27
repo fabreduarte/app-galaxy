@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    align-items: center;
+    
+    height: 100%;
+    width: 100%;
+
+    a {
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #E1EEEB;
+        border: 1px solid transparent;
+    }
+
+    .active {
+        border: 1px solid #E1EEEB;
+        border-radius: 5px;
+    }
+    
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(0,24,72,1) 0%, rgba(48,24,96,1) 45%);
+}
+
+.container {
+    height: 100%;  
+    margin: 0 auto;    
+    padding: 30px;     
+    width: clamp(300px, 100%, 1200px);
+}
