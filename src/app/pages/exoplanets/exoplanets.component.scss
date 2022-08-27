@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+}
+
+.filtro-tabela-container {
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table-container {
+    position: relative;
+    min-height: 200px;
+    max-height: 60vh;
+    overflow-y: auto;
+    
+}
+
+table {
+    background: none;
+    width: 100%;
+}
+
+.filter {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    mat-form-field {
+        width: 90%;
+    }    
+}
