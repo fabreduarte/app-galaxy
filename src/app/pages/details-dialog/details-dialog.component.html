@@ -1,1 +1,43 @@
-<p>details-dialog works!</p>
+<button mat-icon-button class="botao-fechar" mat-dialog-close>
+    <mat-icon>
+        close
+    </mat-icon>
+</button>
+
+<table class="table-details">
+    <tr>
+        <th>Nome</th>
+        <td>{{ exoplanet.name }}</td>
+    </tr>
+    <tr>
+        <th>Estrelas</th>
+        <td>{{ exoplanet.stars }}</td>
+    </tr>
+    <tr>
+        <th>Luas</th>
+        <td>{{ exoplanet.moons }}</td>
+    </tr>
+    <tr>
+        <th>Ano de descoberta</th>
+        <td>{{ exoplanet.year }}</td>
+    </tr>
+    <tr>
+        <th>Local de descoberta</th>
+        <td>{{ exoplanet.locale }}</td>
+    </tr>
+    <tr>
+        <th>Distância (pc)</th>
+        <td>{{ exoplanet.distance }}</td>
+    </tr>
+    <tr>
+        <th>Última atualização</th>
+        <td>{{ exoplanet.dateUpdate }}</td>
+    </tr>
+    <tr>
+        <th>Data de publicação</th>
+        <td>{{ exoplanet.datePosting }}</td>
+    </tr>
+</table>
+<div class="btn-redirect-container">
+    <a [href]="link" class="btn-redirect" target="_blank">Veja Mais</a>
+</div>
