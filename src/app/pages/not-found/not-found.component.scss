@@ -1,0 +1,41 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 500px;
+    width: 500px;
+
+    margin: 25vh auto;
+
+    h1, span {
+        z-index: 1;
+    }
+
+    img {
+        width: 50%;
+        animation: astronaut;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+}
+
+.error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    span {
+        color: white;
+        font-size: 130px;
+        line-height: 140px;
+    }
+}
+
+@keyframes astronaut {
+    0% {
+        transform: translateY(-1000px);
+    }
+}
